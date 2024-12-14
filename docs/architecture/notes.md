@@ -195,7 +195,7 @@ hash(hash(hash(hash(serial_num, [0; 4]), script_hash), input_hash), vault_hash)
 
 Note discovery describes the process by which Miden clients find notes they want to consume. Miden clients can query the Miden node for notes carrying a certain note tag in their metadata. Note tags are best-effort filters for notes registered on the network. They are lightweight values (32-bit) used to speed up queries. Clients can follow tags for specific use cases, such as swap scripts, or user-created custom tags. Tags are also used by the operator to identify notes intended for network execution and include the corresponding information on how to execute them.
 
-The two most signification bits of the note tag have the following interpretation:
+The two most significant bits of the note tag have the following interpretation:
 
 | Prefix | Execution hint | Target   | Allowed note type |
 | ------ | :------------: | :------: | :----------------:|
